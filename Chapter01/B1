@@ -1,0 +1,24 @@
+package Baitap;
+
+public class Bai1<T> {
+
+    private T value;
+
+    public void set(T value) {
+        this.value = value;
+    }
+
+    public T get() {
+        return value;
+    }
+
+    public static void main(String[] args) {
+        Bai1<Integer> t1 = new Bai1<>();
+        t1.set(100);
+        System.out.println(t1.get());
+
+        Bai1<String> t2 = new Bai1<>();
+        t2.set("Hello Java");
+        System.out.println(t2.get());
+    }
+}
