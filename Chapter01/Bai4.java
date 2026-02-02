@@ -1,0 +1,19 @@
+package Baitap;
+
+import java.util.ArrayList;
+
+public class Bai4 {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+
+        fruits.add(1, "Mango");
+        fruits.set(2, "Grapes");
+
+        System.out.println(fruits);
+        System.out.println("Có Apple không? " + fruits.contains("Apple"));
+    }
+}
